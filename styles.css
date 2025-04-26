@@ -1,0 +1,79 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF8E1; /* Honey yellow background */
+    color: #3E2723; /* Dark Brown for text */
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #FFD54F; /* Honey color */
+    color: #fff;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header .tagline {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.main {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.honeycomb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hexagon-container, .hexagon-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hexagon {
+    width: 120px;
+    height: 104px;
+    background-color: #FFD54F;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3E2723;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hexagon.large {
+    width: 180px;
+    height: 156px;
+    background-color: #FFB300;
+}
+
+.hexagon p {
+    margin: 0;
+}
+
+.hexagon.highlight {
+    background-color: #FF7043; /* Bright color for 'Book a Slot' */
+    color: white;
+}
+
+footer {
+    background-color: #3E2723;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
