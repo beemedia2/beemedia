@@ -1,91 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Editing Agency</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .highlight {
-            color: #f97316;
-            font-weight: bold;
-        }
-        .video-container {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        #home {
-            background-image: url('https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            position: relative;
-        }
-        #home::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
-            z-index: 1;
-        }
-        #home > * {
-            position: relative;
-            z-index: 2;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Editing Agency</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-gray-900 text-white">
-    <!-- Homepage -->
-    <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-4">
-        <h1 class="text-2xl md:text-4xl font-bold mb-6">
-            Relax! We will handle your <span class="highlight">videos</span> with <span class="highlight">100% proficiency</span>. Be <span class="highlight">stress-free</span>.
-        </h1>
-        <p class="text-base md:text-lg mb-8 max-w-2xl">
-            Our professional team delivers top-notch video editing services tailored to your needs. Let us bring your vision to life.
-        </p>
-        <div class="flex space-x-4">
-            <a href="contact.html" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">Contact</a>
-            <a href="https://calendly.com/your-booking-link" target="_blank" class="bg-transparent border-2 border-orange-500 hover:bg-orange-500 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">Book Slot</a>
-        </div>
-    </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-16 bg-gray-800">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Work</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 max-w-6xl mx-auto">
-            <div class="video-container">
-                <video controls class="w-full rounded-lg shadow-lg">
-                    <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <p class="mt-4 text-center text-lg">Project 1: Cinematic Showcase</p>
-            </div>
-            <div class="video-container">
-                <video controls class="w-full rounded-lg shadow-lg">
-                    <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_2mb.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <p class="mt-4 text-center text-lg">Project 2: Dynamic Promo</p>
-            </div>
-        </div>
-    </section>
+  <!-- Homepage -->
+  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-4">
+    <h1 class="text-2xl md:text-4xl font-bold mb-6">
+      Relax! We will handle your <span class="highlight">videos</span> with <span class="highlight">100% proficiency</span>. Be <span class="highlight">stress-free</span>.
+    </h1>
+    <p class="text-base md:text-lg mb-8 max-w-2xl">
+      Our professional team delivers top-notch video editing services tailored to your needs. Let us bring your vision to life.
+    </p>
+    <div class="flex space-x-4">
+      <a href="contact.html" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">Contact</a>
+      <a href="https://calendly.com/your-booking-link" target="_blank" class="bg-transparent border-2 border-orange-500 hover:bg-orange-500 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">Book Slot</a>
+    </div>
+  </section>
 
-    <!-- Smooth Scroll Script -->
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-16 bg-gray-800">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Work</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 max-w-6xl mx-auto">
+      <div class="video-container">
+        <video controls class="w-full rounded-lg shadow-lg">
+          <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="mt-4 text-center text-lg">Project 1: Cinematic Showcase</p>
+      </div>
+      <div class="video-container">
+        <video controls class="w-full rounded-lg shadow-lg">
+          <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_2mb.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p class="mt-4 text-center text-lg">Project 2: Dynamic Promo</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Smooth Scroll Script -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
         });
-    </script>
+      });
+    });
+  </script>
+
 </body>
 </html>
