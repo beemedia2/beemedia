@@ -1,79 +1,108 @@
-/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #FFF8E1; /* Honey yellow background */
-    color: #3E2723; /* Dark Brown for text */
+  background-color: #FFF5E0;
+  color: #000;
+  line-height: 1.6;
 }
 
-header {
-    text-align: center;
-    padding: 30px;
-    background-color: #FFD54F; /* Honey color */
-    color: #fff;
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem 3rem;
 }
 
-header h1 {
-    font-size: 3em;
-    margin: 0;
+.nav-links a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s;
 }
 
-header .tagline {
-    font-size: 1.2em;
-    font-style: italic;
+.nav-links a:hover {
+  color: #facc15;
 }
 
-.main {
-    padding: 50px 0;
-    text-align: center;
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://images.unsplash.com/photo-1581090700227-1e8b2e6d3aeb?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+  height: 90vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 2rem;
+  position: relative;
 }
 
-.honeycomb {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+.hero-text {
+  max-width: 600px;
 }
 
-.hexagon-container, .hexagon-bottom {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
 }
 
-.hexagon {
-    width: 120px;
-    height: 104px;
-    background-color: #FFD54F;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #3E2723;
-    font-weight: bold;
-    text-align: center;
+.hero-text h1 span {
+  color: #facc15;
 }
 
-.hexagon.large {
-    width: 180px;
-    height: 156px;
-    background-color: #FFB300;
+.hero-text h2 {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #facc15;
 }
 
-.hexagon p {
-    margin: 0;
+.btn-primary {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #facc15;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
-.hexagon.highlight {
-    background-color: #FF7043; /* Bright color for 'Book a Slot' */
-    color: white;
+.btn-primary:hover {
+  background-color: #eab308;
 }
 
-footer {
-    background-color: #3E2723;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+.info {
+  padding: 3rem 2rem;
+  background: #fff;
+  text-align: center;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.footer {
+  padding: 2rem;
+  text-align: center;
+  background: #000;
+  color: #FFF5E0;
+  font-size: 1rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+  .hero-text h2 {
+    font-size: 1.5rem;
+  }
 }
