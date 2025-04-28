@@ -1,108 +1,12 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-body {
-  background-color: #FFF5E0;
-  color: #000;
-  line-height: 1.6;
-}
-
-.navbar {
-  display: flex;
-  justify-content: flex-end;
-  padding: 2rem 3rem;
-}
-
-.nav-links a {
-  margin-left: 2rem;
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  font-size: 1.1rem;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: #facc15;
-}
-
-.hero {
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url('https://drive.google.com/file/d/1GPZyZ0r8XSATBb-WSov3BQ_m9Swdkoeg/view?usp=drive_link') no-repeat center center/cover;
-  height: 90vh;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: left;
-  padding: 2rem;
+#home {
+  background-image: url('https://drive.google.com/file/d/1GPZyZ0r8XSATBb-WSov3BQ_m9Swdkoeg/view?pli=1');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   position: relative;
 }
 
-.hero-text {
-  max-width: 600px;
-}
-
-.hero-text h1 {
-  font-size: 3rem;
-  font-weight: 800;
-  line-height: 1.2;
-}
-
-.hero-text h1 span {
-  color: #facc15;
-}
-
-.hero-text h2 {
-  margin-top: 1.5rem;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #facc15;
-}
-
-.btn-primary {
-  margin-top: 2rem;
-  padding: 1rem 2rem;
-  font-size: 1rem;
-  font-weight: 600;
-  background-color: #facc15;
-  color: #000;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.btn-primary:hover {
-  background-color: #eab308;
-}
-
-.info {
-  padding: 3rem 2rem;
-  background: #fff;
-  text-align: center;
-  color: #333;
-  font-size: 1.2rem;
-}
-
-.footer {
-  padding: 2rem;
-  text-align: center;
-  background: #000;
-  color: #FFF5E0;
-  font-size: 1rem;
-}
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
-  .hero-text h1 {
-    font-size: 2.2rem;
-  }
-  .hero-text h2 {
-    font-size: 1.5rem;
-  }
+/* Remove dark overlay */
+#home::before {
+  content: none;
 }
